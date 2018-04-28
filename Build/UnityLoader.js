@@ -1,5 +1,6 @@
 var UnityLoader = UnityLoader || {
     compatibilityCheck: function (e, t, r) {
+        r();
     },
     Blobs: {},
     loadCode: function (e, t, r) {
