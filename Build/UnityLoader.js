@@ -1,4 +1,4 @@
-var UnityLoader = UnityLoader || 
+var UnityLoader = UnityLoader || {
     Blobs: {},
     loadCode: function (e, t, r) {
         var n = [].slice.call(UnityLoader.Cryptography.md5(e)).map(function (e) {
