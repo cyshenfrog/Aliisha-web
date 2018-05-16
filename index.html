@@ -4,7 +4,9 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <title>Unity WebGL Player | Aliisha_webbox</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <title>Aliisha_webbox</title>
   <style>
     html {
       box-sizing: border-box;
@@ -111,6 +113,9 @@
           btn.textContent = 'PLAY';
           btn.style.fontSize = '2em';
           btn.onclick = e => {
+            gameInstance.removeTimeout = setTimeout(function () {
+              loader.style.display = "none";
+            }, 2000);
             gameInstance.Module.callMain();
             btn.remove();
           };
@@ -131,11 +136,7 @@
         loader.querySelector(".spinner").style.display = "none";
       }
       gameInstance.progress.style.transform = `scaleX(${progress})`;
-      if (progress === 1 && !gameInstance.removeTimeout) {
-        gameInstance.removeTimeout = setTimeout(function () {
-          loader.style.display = "none";
-        }, 2000);
-      }
+      if (progress === 1 && !gameInstance.removeTimeout) {}
     }
   </script>
 </head>
