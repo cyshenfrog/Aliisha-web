@@ -1,18 +1,19 @@
 
+
 .playButton {
+	background-image: url("btn_start.png");
 	position: absolute;
 	left: 50%;
-	top: 75%;
+	top: 70%;
 	transform: translate(-50%, -50%);
 	width: 140px;
 	height: 70px;
 	border-radius: 10px;
-	color: #1eaed3;
 	background-color: white;
 	z-index: 10;
 }
 
 .playButton:hover {
-    color: white;
+    color: #1eaed3;
     background-color: #1eaed3;
 }
