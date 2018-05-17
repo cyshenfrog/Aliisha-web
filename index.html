@@ -97,10 +97,26 @@
         transform: rotate(360deg);
       }
     }
+
+    .playButton {
+      background-image: url(btn_start.png);
+      position: absolute;
+      left: 50%;
+      top: 65%;
+      transform: translate(-50%, -50%);
+      width: 140px;
+      height: 40px;
+      background-color: white;
+      z-index: 10;
+    }
+
+    .playButton:hover {
+      color: #1eaed3;
+      background-color: #ffffff;
+    }
   </style>
 
   <link rel="shortcut icon" href="TemplateData/favicon.ico">
-  <link rel="stylesheet" href="TemplateData/style.css">
   <script src="TemplateData/UnityProgress.js"></script>
   <script src="Build/UnityLoader.js"></script>
   <script>
